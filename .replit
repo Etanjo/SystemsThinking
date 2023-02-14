@@ -28,3 +28,6 @@ syntax = "typescript"
 
 [languages.typescript.languageServer]
 start = [ "typescript-language-server", "--stdio" ]
+
+[nix]
+channel = "stable-22_11"

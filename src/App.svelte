@@ -10,8 +10,9 @@
 <style>
   main {
     background-color: #0033a0;
-    color: white;
+    color: red;
     font-size: 14pt;
+    
   }
   
 </style>

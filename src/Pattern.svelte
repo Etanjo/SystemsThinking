@@ -10,5 +10,7 @@
       border-right: 25px solid transparent;
       height: 0;
       width: 100px;
+    color: #303633;
+    font-family: 'PT Sans'
     }
 </style>

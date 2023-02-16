@@ -24,4 +24,7 @@ main{
    display: flex;
     align-items: center;
   }
+  label{
+    color: #303633;
+  }
 </style>

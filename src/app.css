@@ -1,4 +1,6 @@
 /* A quick reset */
+  @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
 h1,h2,h3,h4,h5,h6,p {
   margin-block-start : 0;
   margin-block-end: 0;
@@ -7,4 +9,3 @@ body,html {
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-  @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');

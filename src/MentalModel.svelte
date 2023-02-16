@@ -4,7 +4,7 @@
 
 <main>
   <h1></h1>
-  <p> <slot/> </p>
+  <p> <!--<slot/>--> </p>
 </main>
 
 <style>

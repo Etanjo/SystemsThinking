@@ -22,4 +22,16 @@
       font-family: 'PT Sans';
       position: relative;;
   }
+      #trapezoid::after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 250px;
+    position: absolute;
+    top: 198px;
+    background-color: #033860;
+    left:-25px;
+      z-index: 2;
+  }
 </style>

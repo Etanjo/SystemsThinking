@@ -30,6 +30,18 @@
     border-bottom: 100px solid #D7F6FE;
     position: absolute;
   }
+  #triangle::after{
+    content: ' ';
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100px;
+    position: absolute;
+    top: 98px;
+    background-color: #033860;
+    left:-50px;
+    z-index: 4;
+  }
   .text{
     position:relative;
     text-align: center;

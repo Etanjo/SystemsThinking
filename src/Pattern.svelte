@@ -1,8 +1,11 @@
 <script>
-  
+  export let text = {
+    displayText: 'I Keep Getting Super Duper Scared, for no reason!!!!! ',
+    popupText: ' '
+  }
 </script>
 <div id = 'trapezoid'>
-  I Keep Getting Super Duper Scared, for no reason!!!!!
+  {text.displayText}
   
   
 </div>

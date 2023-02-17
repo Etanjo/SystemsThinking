@@ -3,7 +3,7 @@
   export let popUpText
   let open = false
 </script>
-<div>
+<div id='triangle'>
   <p>
     <!--<slot/>-->
     This is text
@@ -13,6 +13,9 @@
   {/if}
 </div>
 <style>
+  #triangle{
+    
+  }
   p{
     color: #303633;
   }

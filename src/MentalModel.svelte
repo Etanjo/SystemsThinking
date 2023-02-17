@@ -13,6 +13,7 @@
 
 <style>
   #trapezoid {
+    text-align: center;
       border-bottom: 200px solid #D7F6FE;
       border-left: 25px solid transparent;
       border-right: 25px solid transparent;

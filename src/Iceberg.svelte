@@ -25,25 +25,39 @@
 
 
 <main>
-  <div><Event/> <label>Visible Events</label></div>
-  <div><Pattern text = {patterns}/> <label>Patterns</label></div>
-  <div><Structure/><label>Structures</label></div>
-  <div><Mental/><label>Mental Models</label></div>
+  <Event/> 
+  <label>Visible Events</label>
+  <Pattern text = {patterns}/> 
+  <label>Patterns</label>
+  <Structure/>
+  <label>Structures</label>
+  <Mental/>
+  <label>Mental Models</label>
 </main>
 
 <style>
 main{
-  display: flex;
+  display: grid;
+  grid-template-columns: min-content min-content;
+  justify-content: center;
+  /*display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;*/
   width: 100vw;
 }
+
+  main :global(*:nth-child(odd)){
+    justify-self:center
+  }
+  
   div{
-   display: flex;
-    align-items: center;
+ position: relative;
+    
   }
   label{
     color: #303633;
+    display: block;
+    align-self: center;
   }
   Event{
     z-index:4;

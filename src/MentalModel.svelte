@@ -5,11 +5,21 @@
 </script>
 
 <main>
-  <h1></h1>
-  <p> <!--<slot/>--> 
-  aaaa</p>
+
+  <div id='trapezoid'>
+  <p> <!--<slot/>--> aaaa</p>
+    </div>
 </main>
 
 <style>
-  
+  #trapezoid {
+      border-bottom: 200px solid #D7F6FE;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      height: 0;
+      width: 200px;
+      color: #303633;
+      font-family: 'PT Sans';
+      position: relative;;
+  }
 </style>

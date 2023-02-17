@@ -45,4 +45,13 @@ main{
   label{
     color: #303633;
   }
+  Event{
+    z-index:4;
+  }
+  Pattern{
+    z-index:3;
+  }
+  Structure{
+    z-index: 2;
+  }
 </style>

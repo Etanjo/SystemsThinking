@@ -31,5 +31,6 @@
     top: 98px;
     background-color: #033860;
     left:-25px;
+    z-index: 3;
   }
 </style>

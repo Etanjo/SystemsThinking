@@ -20,6 +20,7 @@
       color: #303633;
       font-family: 'PT Sans';
       position: relative;;
+     text-align: center;
     }
   #trapezoid::after{
     content: ' ';

@@ -2,12 +2,16 @@
   import Popup from './Popup.svelte'
   export let popUpText 
   let open = false
+   export let text = {
+    displayText: 'Hello!',
+    popupText: '' 
+  }
 </script>
 
 <main>
 
   <div id = 'trapezoid'>
-  <p> <!--<slot/>--> gggg </p>
+{text.displayText}
   </div>
 </main>
 

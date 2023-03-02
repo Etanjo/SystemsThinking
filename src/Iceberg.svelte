@@ -5,7 +5,7 @@
   import Structure from './Structure.svelte'
 
   export let events = {
-    displayText: 'this is show',
+    displayText: "I can't find my car",
     popupText: ''
   }
   export let patterns = {
@@ -13,11 +13,11 @@
     popupText: ' '
   }
   export let structures = {
-    displayText: ' ',
+    displayText: 'People want cool, expensive cars like the one I have!!  ',
     popupText: ' '
   }
   export let mentalModel = {
-    displayText: ' ',
+    displayText: "Having an expensive car is often seen as a status symbol, which means you're better to be around!!!! ",
     popupText: ' '
   }
   
@@ -29,9 +29,9 @@
   <label>Visible Events</label>
   <Pattern text = {patterns}/> 
   <label>Patterns</label>
-  <Structure/>
+  <Structure text = {structures}/>
   <label>Structures</label>
-  <Mental/>
+  <Mental text = {mentalModel}/>
   <label>Mental Models</label>
 </main>
 

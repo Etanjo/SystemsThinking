@@ -1,19 +1,14 @@
 <script>
-  import Popup from './Popup.svelte'
-  export let popUpText
-  let open = false
+ export let text = {
+    displayText: 'text is you',
+    popupText: ' '
+  }
 </script>
 <div class="wrap">
   <div id='triangle'>
   </div>
   <div class="text">
-    <p>
-      <!--<slot/>-->
-      This is text
-    </p>
-    {#if open}
-      <Popup><p>{popUpText}</p></Popup>
-    {/if}
+    {text.displayText}
   </div>
 </div>
 <style>

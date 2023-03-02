@@ -5,7 +5,7 @@
   import Structure from './Structure.svelte'
 
   export let events = {
-    displayText: ' ',
+    displayText: 'this is show',
     popupText: ''
   }
   export let patterns = {
@@ -25,7 +25,7 @@
 
 
 <main>
-  <Event/> 
+  <Event text = {events}/> 
   <label>Visible Events</label>
   <Pattern text = {patterns}/> 
   <label>Patterns</label>

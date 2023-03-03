@@ -6,12 +6,15 @@
     displayText: 'Bozo',
     popupText: ' '
   }
+    import Textbox from './Textbox.svelte'
+  export let editable = false
+
 </script>
 
 <main>
 
   <div id='trapezoid'>
-    {text.displayText}
+    <Textbox editable = {editable}>{text.displayText}</Textbox>
     </div>
 </main>
 

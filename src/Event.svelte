@@ -3,12 +3,14 @@
     displayText: 'text is you',
     popupText: ' '
   }
+     import Textbox from './Textbox.svelte'
+  export let editable = false
 </script>
 <div class="wrap">
   <div id='triangle'>
   </div>
-  <div class="text">
-    {text.displayText}
+  <div class="text" >
+    <Textbox editable = {editable}>{text.displayText}</Textbox>
   </div>
 </div>
 <style>

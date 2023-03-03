@@ -2,7 +2,7 @@
  import ExampleIceberg from './ExampleIceberg.svelte'
   import EditIceberg from './EditIceberg.svelte'
   import DisplayIceberg from './DisplayIceberg.svelte'
-  export let active = 'example'
+  export let active = 'edit'
 </script>
 
 <main>

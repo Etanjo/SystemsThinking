@@ -25,13 +25,13 @@
 
 
 <main>
-  <Event text = {events}/> 
+  <Event text = {events} editable = true/> 
   <label>Visible Events</label>
-  <Pattern text = {patterns}/> 
+  <Pattern text = {patterns} editable = true/> 
   <label>Patterns</label>
-  <Structure text = {structures}/>
+  <Structure text = {structures} editable = true/>
   <label>Structures</label>
-  <Mental text = {mentalModel}/>
+  <Mental text = {mentalModel} editable = true/>
   <label>Mental Models</label>
 </main>
 

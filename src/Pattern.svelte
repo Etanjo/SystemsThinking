@@ -1,11 +1,13 @@
 <script>
+  import Textbox from './Textbox.svelte'
+  export let editable = false
   export let text = {
     displayText: 'I Keep Getting Super Duper Scared, for no reason!!!!! ',
     popupText: ' '
   }
 </script>
 <div id = 'trapezoid'>
-  {text.displayText}
+  <Textbox editable = {editable}>{text.displayText}</Textbox>
   
   
 </div>

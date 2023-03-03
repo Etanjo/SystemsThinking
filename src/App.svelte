@@ -3,6 +3,7 @@
   import EditIceberg from './EditIceberg.svelte'
   import DisplayIceberg from './DisplayIceberg.svelte'
   export let active = 'edit'
+  import Tabs from './Tabs.svelte'
 </script>
 
 <main>
@@ -13,6 +14,7 @@
   {:else if active == 'edit'}
     <EditIceberg/>
   {/if}
+  <Tabs/>
 </main>
 
 <style>

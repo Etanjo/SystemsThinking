@@ -2,7 +2,7 @@
  import ExampleIceberg from './ExampleIceberg.svelte'
   import EditIceberg from './EditIceberg.svelte'
   import DisplayIceberg from './DisplayIceberg.svelte'
-  export let active = 'display'
+  export let active = 'edit'
   import Tabs from "./Tabs.svelte"
 </script>
 
@@ -14,7 +14,7 @@
   {:else if active == 'edit'}
     <EditIceberg/>
   {/if}
-  <Tabs/>
+  <Tabs {active} onChangeTab={(v)=>{active=v}}/>
 </main>
 
 <style>

@@ -2,13 +2,11 @@
   export let title = ""
   export let top = 0
   export let left = 0
-  export let change = ""
-  function show(){
-    alert(change)
-  }
+  export let active
+  
 </script>
 
-<h1 on:click={show} style = "top: {top}px; left: {left}px;">{title}</h1>
+<h1 on:click style = "top: {top}px; left: {left}px;">{title}</h1>
 
 <style>
   h1{

@@ -5,6 +5,11 @@
   import Structure from './Structure.svelte'
   import Popup from './Popup.svelte'
 
+  let eOpen = false
+  let pOpen = false
+  let sOpen = false
+  let mOpen = false
+
   export let events = {
     displayText: "I can't find my car",
     popupText: ''
@@ -26,17 +31,17 @@
 
 
 <main>
-  <Popup/>
-  <Event text = {events}/> 
+  <Popup open = {eOpen}/>
+  <Event text = {events} on:click={()=>eOpen = !eOpen}/> 
   <label>Visible Events</label>
-  <Popup/>
-  <Pattern text = {patterns}/> 
+  <Popup open = {pOpen} />
+  <Pattern text = {patterns} on:click={()=>pOpen = !pOpen}/> 
   <label>Patterns</label>
-  <Popup/>
-  <Structure text = {structures}/>
+  <Popup open = {sOpen}/>
+  <Structure text = {structures} on:click={()=>sOpen = !sOpen}/>
   <label>Structures</label>
-  <Popup/>
-  <Mental text = {mentalModel}/>
+  <Popup open = {mOpen}/>
+  <Mental text = {mentalModel} on:click={()=>mOpen = !mOpen}/>
   <label>Mental Models</label>
 </main>
 

@@ -6,7 +6,7 @@
     popupText: ' '
   }
 </script>
-<div id = 'trapezoid'>
+<div id = 'trapezoid' on:click>
   <Textbox editable = {editable}>{text.displayText}</Textbox>
   
   

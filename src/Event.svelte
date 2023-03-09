@@ -6,7 +6,7 @@
      import Textbox from './Textbox.svelte'
   export let editable = false
 </script>
-<div class="wrap">
+<div class="wrap" on:click>
   <div id='triangle'>
   </div>
   <div class="text" >

@@ -8,5 +8,10 @@ export let open = false
 </main>
 
 <style>
- 
+ div{
+   display:none;
+ }
+  .open{
+    display:block;
+  }
 </style>

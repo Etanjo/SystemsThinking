@@ -1,5 +1,5 @@
 <script>
-export let opem = false
+export let open = false
 
 </script>
 

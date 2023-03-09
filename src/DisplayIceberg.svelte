@@ -3,6 +3,7 @@
   import Mental from './MentalModel.svelte'
   import Pattern from './Pattern.svelte'
   import Structure from './Structure.svelte'
+  import Popup from './Popup.svelte'
 
   export let events = {
     displayText: "I can't find my car",
@@ -25,12 +26,16 @@
 
 
 <main>
+  <Popup/>
   <Event text = {events}/> 
   <label>Visible Events</label>
+  <Popup/>
   <Pattern text = {patterns}/> 
   <label>Patterns</label>
+  <Popup/>
   <Structure text = {structures}/>
   <label>Structures</label>
+  <Popup/>
   <Mental text = {mentalModel}/>
   <label>Mental Models</label>
 </main>
@@ -38,8 +43,10 @@
 <style>
 main{
   display: grid;
-  grid-template-columns: min-content min-content;
+  grid-template-columns: min-content min-content min-content;
   justify-content: center;
+  justify-items: center;
+  align-items: center;
   /*display: flex;
   flex-direction: column;
   align-items: center;*/

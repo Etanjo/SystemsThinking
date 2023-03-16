@@ -11,9 +11,11 @@ export let open = false
  div{
    opacity: 0;
    pointer-events: none;
+   transition: all 200ms;
  }
   div.open{
     opacity: 1;
     pointer-events: all;
+    
   }
 </style>

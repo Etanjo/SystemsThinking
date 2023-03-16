@@ -6,6 +6,7 @@ Background color (iceberg): #D7F6FE
 Text Color: #303633
 Border Color (iceberg): #033860
 Webpage background/white: #F0F6FA
+tabs highlight color: #aec8cf
 
 2/16
 William - Out

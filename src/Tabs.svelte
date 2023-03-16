@@ -4,9 +4,9 @@
   export let onChangeTab
 </script>
 
-<Tab title = "display" top = 600 left = 238 change="display" active = {active=="display"} on:click={()=>{onChangeTab("display")}}/>
-<Tab title = "test" top = 600 left = 300 change="edit" active = {active}/>
-<Tab title = "test" top = 600 left = 362 change="example" active = {active}/>
+<Tab title = "display" top = 600 left = 193 active = {active=="display"} on:click={()=>{onChangeTab("display")}}/>
+<Tab title = "edit" top = 600 left = 300 active = {active=="edit"} on:click={()=>{onChangeTab("edit")}}/>
+<Tab title = "example" top = 600 left = 364 active = {active=="example"} on:click={()=>{onChangeTab("example")}}/>
 
 
 <style>

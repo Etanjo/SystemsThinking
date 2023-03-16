@@ -10,8 +10,13 @@
 
 <style>
   h1{
-    border: solid 1px black;
+    border: solid 3px #033860;
+    background-color: #D7F6FE;
     position: absolute;
     padding: 5px;
+    color: #303633;
+  }
+  h1:hover{
+    background-color: #aec8cf;
   }
 </style>

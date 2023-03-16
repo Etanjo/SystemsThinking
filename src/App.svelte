@@ -18,5 +18,12 @@
 </main>
 
 <style>
+  main {
+    background-image: url("icebergbg.jpg");
+    background-repeat: no-repeat;
+       background-size: contain;
 
+    height: 980px;
+    width: 1500px;
+  }
 </style>

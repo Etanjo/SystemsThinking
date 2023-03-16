@@ -9,9 +9,11 @@ export let open = false
 
 <style>
  div{
-   display:none;
+   opacity: 0;
+   pointer-events: none;
  }
-  .open{
-    display:block;
+  div.open{
+    opacity: 1;
+    pointer-events: all;
   }
 </style>

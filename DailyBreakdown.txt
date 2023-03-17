@@ -1,0 +1,21 @@
+Daily Breakdown
+*DO NOT CHANGE WHAT FILE YOU WORK ON UNTIL NEXT CLASS*
+
+Color Scheme:
+Background color (iceberg): #D7F6FE
+Text Color: #303633
+Border Color (iceberg): #033860
+Webpage background/white: #F0F6FA
+tabs highlight color: #aec8cf
+
+2/16
+William - Out
+Ethan - Iceberg, Patterns
+Jack - Visible Events
+Julian - Structures, Mental Model
+
+2/17
+William - Out
+Ethan - Iceberg, patterns
+Jack - Visible Events
+Julian - Structures, Mental Model

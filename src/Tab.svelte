@@ -19,4 +19,7 @@
   h1:hover{
     background-color: #aec8cf;
   }
+  h1:active{
+    background-color: #94aab0;
+  }
 </style>

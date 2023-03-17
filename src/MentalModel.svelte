@@ -1,6 +1,5 @@
 <script>
   import Popup from './Popup.svelte'
-  export let popUpText
   let open = false
     export let text = {
     displayText: 'Bozo',

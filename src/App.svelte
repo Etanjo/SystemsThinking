@@ -22,8 +22,8 @@
     background-image: url("icebergbg.jpg");
     background-repeat: no-repeat;
        background-size: contain;
-    background-position-y: -70px;
-    height: 980px;
+    background-position-y: -200px;
+  height: 980px;
     width: 1500px;
   }
 </style>

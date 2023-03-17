@@ -1,0 +1,85 @@
+<script>
+  import Event from './Event.svelte'
+  import Mental from './MentalModel.svelte'
+  import Pattern from './Pattern.svelte'
+  import Structure from './Structure.svelte'
+  import Popup from './Popup.svelte'
+
+  let eOpen = false
+  let pOpen = false
+  let sOpen = false
+  let mOpen = false
+
+  export let events = {
+    displayText: "I can't find my car",
+    popupText: 'I went to the parking lot after work to find where my car was, but it was gone!'
+  }
+  export let patterns = {
+    displayText: "My car keeps going missing!!",
+  popupText: 'This is a common occurence. Twice a week (Tuesdays and Thursdays of course) my car disappears from the work parking lot! This is preposterous!! Who would do something so extremely dastardly?? '
+  }
+  export let structures = {
+    displayText: 'People want cool, expensive cars like the one I have!!  ',
+    popupText: "Alright, so maybe leaving my modified 2022 Lamborghini Huracan unlocked in a parking lot near the inner city isn't the best idea. And yes, I only bring it on Tuesdays and Thursdays. And of course it doesn't happen when I bring my 1999 Honda Accord to work. I suppose whichever fiend is wronging me is purely jealous of my status as a Huracan owner. " 
+  }
+  export let mentalModel = {
+    displayText: "Having an expensive car is often seen as a status symbol, which means you're better to be around!!!! ",
+    popupText: "According to the international car census of 2021 (and not my brain), people LOVE cars that are over $100,000!! ESPECIALLY SPEEDTAILS. Now I don't own a Speedtail, but I wish I did because of how cool they are. I would steal one if I had the oppurtunity. THis must be what people think of my Lambo!! What's awesome about mine is it has a custom wrap on it. I picked an olive green (my favorite color), and I would wrap any car with that (especially a Speedtail). Now of course some people don't fully appreciate the olive green color with the yellow racing stripes, BUT I DON'T CARE!!! Clearly people want my car because of money. They can show off on their instagrams! "
+  }
+  
+</script>
+
+
+<main>
+  <Popup open = {eOpen} text = {events.popupText}/>
+  <Event text = {events} on:click={()=>eOpen = !eOpen}/> 
+  <label>Visible Events</label>
+  <Popup open = {pOpen} text = {patterns.popupText}/>
+  <Pattern text = {patterns} on:click={()=>pOpen = !pOpen}/> 
+  <label>Patterns</label>
+  <Popup open = {sOpen} text = {structures.popupText}/>
+  <Structure text = {structures} on:click={()=>sOpen = !sOpen}/>
+  <label>Structures</label>
+  <Popup open = {mOpen} text = {mentalModel.popupText}/>
+  <Mental text = {mentalModel} on:click={()=>mOpen = !mOpen}/>
+  <label>Mental Models</label>
+</main>
+
+<style>
+main{
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  /*justify-content: center;*/
+  justify-items: center;
+  align-items: center;
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;*/
+  width: 100vw;
+  position: absolute;
+  left: 60px;
+}
+
+  main :global(*:nth-child(odd)){
+    justify-self:center
+  }
+  
+  div{
+ position: relative;
+    
+  }
+  label{
+    color: #303633;
+    display: block;
+    align-self: center;
+  }
+  Event{
+    z-index:4;
+  }
+  Pattern{
+    z-index:3;
+  }
+  Structure{
+    z-index: 2;
+  }
+</style>

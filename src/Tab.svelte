@@ -2,11 +2,9 @@
   export let title = ""
   export let top = 0
   export let left = 0
-  export let active
+  export let active = false
   
 </script>
-
-<h1 on:click style = "top: {top}px; left: {left}px;">{title}</h1>
 
 <style>
   h1{
@@ -15,6 +13,8 @@
     position: absolute;
     padding: 5px;
     color: #303633;
+    width: 120px;
+    text-align: center;
   }
   h1:hover{
     background-color: #aec8cf;
@@ -23,3 +23,9 @@
     background-color: #94aab0;
   }
 </style>
+
+{#if active == false}
+  <h1 on:click style = "top: {top}px; left: {left}px; font-weight:50">{title}</h1>
+{:else}
+  <h1 on:click style = "top: {top}px; left: {left}px;;">{title}</h1>
+{/if}

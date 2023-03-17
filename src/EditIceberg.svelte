@@ -3,6 +3,7 @@
   import Mental from './MentalModel.svelte'
   import Pattern from './Pattern.svelte'
   import Structure from './Structure.svelte'
+  import Popup from './Popup.svelte'
 
   export let events = {
     displayText: "I can't find my car",
@@ -26,26 +27,31 @@
 
 
 <main>
+  <Popup open = true text = {events.popupText} editable = true/>
   <Event text = {events} editable = true/> 
   <label>Visible Events</label>
+  <Popup open = true text = {patterns.popupText} editable = true/>
   <Pattern text = {patterns} editable = true/> 
   <label>Patterns</label>
+  <Popup open = true text = {structures.popupText} editable = true/>
   <Structure text = {structures} editable = true/>
   <label>Structures</label>
+  <Popup open = true text = {mentalModel.popupText} editable = true/>
   <Mental text = {mentalModel} editable = true/>
   <label>Mental Models</label>
-</main>
+  </main>
 
 <style>
 main{
   display: grid;
-  grid-template-columns: min-content min-content;
-  justify-content: center;
-  /*display: flex;
-  flex-direction: column;
-  align-items: center;*/
+  grid-template-columns: min-content min-content min-content;
+  justify-items: center;
+  align-items: center;
   width: 100vw;
+  position: absolute;
+  left: 60px;
 }
+
 
   main :global(*:nth-child(odd)){
     justify-self:center

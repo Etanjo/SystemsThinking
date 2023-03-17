@@ -1,10 +1,12 @@
 <script>
+  import Textbox from './Textbox.svelte'
 export let open = false
 export let text = ""
+export let editable = false
 </script>
 
 <main>
-   <div class:open>{text}</div>
+   <div class:open><Textbox editable = {editable}>{text}</Textbox></div>
 </main>
 
 <style>

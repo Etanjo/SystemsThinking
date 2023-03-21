@@ -55,9 +55,10 @@ main{
   /*display: flex;
   flex-direction: column;
   align-items: center;*/
-  width: 100vw;
+  width: 70%;
   position: absolute;
-  left: 60px;
+  left: 17%;
+  top: 20%;
 }
 
   main :global(*:nth-child(odd)){
@@ -65,7 +66,7 @@ main{
   }
   
   div{
- position: relative;
+  position: relative;
     
   }
   label{

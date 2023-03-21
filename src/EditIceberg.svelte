@@ -47,9 +47,10 @@ main{
   grid-template-columns: min-content min-content min-content;
   justify-items: center;
   align-items: center;
-  width: 100vw;
+  width: 70%;
   position: absolute;
-  left: 60px;
+  left: 17%;
+  top: 20%;
 }
 
 
@@ -58,7 +59,7 @@ main{
   }
   
   div{
- position: relative;
+  position: relative;
     
   }
   label{

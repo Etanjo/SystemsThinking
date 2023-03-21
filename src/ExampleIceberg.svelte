@@ -31,16 +31,16 @@
 
 
 <main>
-  <Popup open = {eOpen} text = {events.popupText}/>
+  <Popup open = {eOpen} text = {events}/>
   <Event text = {events} on:click={()=>eOpen = !eOpen}/> 
   <label>Visible Events</label>
-  <Popup open = {pOpen} text = {patterns.popupText}/>
+  <Popup open = {pOpen} text = {patterns}/>
   <Pattern text = {patterns} on:click={()=>pOpen = !pOpen}/> 
   <label>Patterns</label>
-  <Popup open = {sOpen} text = {structures.popupText}/>
+  <Popup open = {sOpen} text = {structures}/>
   <Structure text = {structures} on:click={()=>sOpen = !sOpen}/>
   <label>Structures</label>
-  <Popup open = {mOpen} text = {mentalModel.popupText}/>
+  <Popup open = {mOpen} text = {mentalModel}/>
   <Mental text = {mentalModel} on:click={()=>mOpen = !mOpen}/>
   <label>Mental Models</label>
 </main>

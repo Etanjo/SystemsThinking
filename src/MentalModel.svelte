@@ -13,7 +13,7 @@
 <main>
 
   <div id='trapezoid' on:click>
-    <Textbox editable = {editable}>{text.displayText}</Textbox>
+      <Textbox editable = {editable} bind:text={text.displayText}></Textbox>
     </div>
 </main>
 

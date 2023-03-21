@@ -1,5 +1,10 @@
 <script>
  export let editable = false
+  export let text
 </script>
 
-<div contenteditable = {editable}> <slot/> </div>
+{#if !editable}
+  <div>{@html text}</div>
+{:else}  
+<div contenteditable  bind:innerHTML={text}>  </div>
+{/if}

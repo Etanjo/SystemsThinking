@@ -1,12 +1,17 @@
 <script>
   import Textbox from './Textbox.svelte'
 export let open = false
-export let text = ""
+export let text = {
+  displayText: "",
+  popupText: ""
+}
 export let editable = false
 </script>
 
 <main>
-   <div class:open><Textbox editable = {editable}>{text}</Textbox></div>
+   <div class:open>
+     <Textbox editable = {editable} bind:text={text.popupText}></Textbox>
+   </div>
 </main>
 
 <style>

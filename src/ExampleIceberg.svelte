@@ -11,20 +11,20 @@
   let mOpen = false
 
   export let events = {
-    displayText: "I can't find my car",
-    popupText: 'I went to the parking lot after work to find where my car was, but it was gone!'
+    displayText: "I can't open my car",
+    popupText: "I went to the parking lot after work to go home and my car's doors where locked"
   }
   export let patterns = {
-    displayText: "My car keeps going missing!!",
-  popupText: 'This is a common occurence. Twice a week (Tuesdays and Thursdays of course) my car disappears from the work parking lot! This is preposterous!! Who would do something so extremely dastardly?? '
+    displayText: "I often can't find my keys",
+  popupText: 'This is a common occurence. Twice a week (Tuesdays and Thursdays of course) my car keys disappear and then I find them in my locked car and i have to call a lock smith'
   }
   export let structures = {
-    displayText: 'People want cool, expensive cars like the one I have!!  ',
-    popupText: "Alright, so maybe leaving my modified 2022 Lamborghini Huracan unlocked in a parking lot near the inner city isn't the best idea. And yes, I only bring it on Tuesdays and Thursdays. And of course it doesn't happen when I bring my 1999 Honda Accord to work. I suppose whichever fiend is wronging me is purely jealous of my status as a Huracan owner. " 
+    displayText: "I always put my keys in my pocket before i get into my car because its a push to start",
+    popupText: "when ever I leave my house I put my car keys in my pocket and leave them there because my car is a push to start and its not needed for me to have my keys out to start my car." 
   }
   export let mentalModel = {
-    displayText: "Having an expensive car is often seen as a status symbol, which means you're better to be around!!!! ",
-    popupText: "According to the international car census of 2021 (and not my brain), people LOVE cars that are over $100,000!! ESPECIALLY SPEEDTAILS. Now I don't own a Speedtail, but I wish I did because of how cool they are. I would steal one if I had the oppurtunity. THis must be what people think of my Lambo!! What's awesome about mine is it has a custom wrap on it. I picked an olive green (my favorite color), and I would wrap any car with that (especially a Speedtail). Now of course some people don't fully appreciate the olive green color with the yellow racing stripes, BUT I DON'T CARE!!! Clearly people want my car because of money. They can show off on their instagrams! "
+    displayText: "putting my keys in my pocket give them the chace to fall out when I am getting out of my car and locking it.",
+    popupText: "Every week when I go into work and my car keys fall out of my pocket when I lock my because I use the lock buttons on the car door to lock my car and not my keys. when I'm at home my keys fall out of my pockets a lot and i always have to find. I really should buy pants with deeper pockets."
   }
   
 </script>

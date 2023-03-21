@@ -32,7 +32,7 @@
   h1 {
     font-family: 'Iceberg', cursive;
     text-align: center;
-    color: #D7F6FE;
+    color: #303633;
     
   }
 </style>

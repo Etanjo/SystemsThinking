@@ -7,7 +7,7 @@
   }
 </script>
 <div id = 'trapezoid' on:click>
-  <Textbox editable = {editable} bind:text={text.displayText}></Textbox>
+  <Textbox editable = {editable} bind:text={text.displayText} on:keyup></Textbox>
   
   
 </div>

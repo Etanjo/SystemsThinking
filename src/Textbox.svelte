@@ -6,5 +6,5 @@
 {#if !editable}
   <div>{@html text}</div>
 {:else}  
-<div contenteditable  bind:innerHTML={text}>  </div>
+<div contenteditable  bind:innerHTML={text} on:keyup>  </div>
 {/if}

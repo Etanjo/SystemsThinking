@@ -10,7 +10,7 @@
   <div id='triangle'>
   </div>
   <div class="text" >
-      <Textbox editable = {editable} bind:text={text.displayText}></Textbox>
+      <Textbox editable = {editable} bind:text={text.displayText} on:keyup></Textbox>
   </div>
 </div>
 <style>

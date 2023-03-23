@@ -10,7 +10,7 @@ export let editable = false
 
 <main>
    <div class:open>
-     <Textbox editable = {editable} bind:text={text.popupText}></Textbox>
+     <Textbox editable = {editable} bind:text={text.popupText} on:keyup></Textbox>
    </div>
 </main>
 

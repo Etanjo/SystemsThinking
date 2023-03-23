@@ -5,6 +5,7 @@
   import Structure from './Structure.svelte'
   import Popup from './Popup.svelte'
   import {globalText} from './store.js'
+  import {forceUpdate} from './store.js'
 
   let text
   globalText.subscribe(value => {
@@ -16,17 +17,17 @@
 
 
 <main>
-  <Popup open = true text = {text.events} editable = true/>
-  <Event text = {text.events} editable = true/> 
+  <Popup open = true text = {$globalText.events} editable = true on:keyup ={()=>forceUpdate()}/>
+  <Event text = {text.events} editable = true on:keyup ={()=>forceUpdate()}/> 
   <label>Visible Events</label>
-  <Popup open = true text = {text.patterns} editable = true/>
-  <Pattern text = {text.patterns} editable = true/> 
+  <Popup open = true text = {text.patterns} editable = true on:keyup ={()=>forceUpdate()}/>
+  <Pattern text = {text.patterns} editable = true on:keyup ={()=>forceUpdate()}/> 
   <label>Patterns</label>
-  <Popup open = true text = {text.structures} editable = true/>
-  <Structure text = {text.structures} editable = true/>
+  <Popup open = true text = {text.structures} editable = true on:keyup ={()=>forceUpdate()}/>
+  <Structure text = {text.structures} editable = true on:keyup ={()=>forceUpdate()}/>
   <label>Structures</label>
-  <Popup open = true text = {text.mentalModel} editable = true/>
-  <Mental text = {text.mentalModel} editable = true/>
+  <Popup open = true text = {text.mentalModel} editable = true on:keyup ={()=>forceUpdate()}/>
+  <Mental text = {text.mentalModel} editable = true on:keyup ={()=>forceUpdate()}/>
   <label>Mental Models</label>
   </main>
 

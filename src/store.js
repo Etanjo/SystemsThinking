@@ -1,4 +1,5 @@
 import {writable} from 'svelte/store'
+import LZ from 'lz-string'
 
 export let globalText = writable({
   events:{
@@ -17,3 +18,23 @@ mentalModel: {
   displayText: "whats assumption beliefs and values do people hold about the system? what beliefs keep the system in place",
   popupText: "expaned more appon the  the beliefs assumtion and values"
 }})
+
+if(location.hash){
+  var data = JSON.parse(LZ.decompressFromBase64(location.hash.substr(4)))
+  globalText.set(data)
+}
+
+let timer
+
+export function forceUpdate(){
+  clearTimeout(timer)
+  timer = setTimeout(()=>{
+    globalText.update((v)=>v)
+  }, 700)
+}
+
+globalText.subscribe((v)=>{
+  const compressed = LZ.compressToBase64(JSON.stringify(v))
+  location.hash = "~v1" + compressed
+  console.log(v)
+})

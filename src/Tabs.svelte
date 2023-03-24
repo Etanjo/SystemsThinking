@@ -12,7 +12,6 @@
   div{
     position: fixed;
     bottom: 0;
-    left: 40%;
     display: flex;
   }
   

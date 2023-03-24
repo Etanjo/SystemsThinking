@@ -20,11 +20,12 @@
   }
   h1:active{
     background-color: #94aab0;
+
   }
 </style>
 
 {#if active == false}
-  <h1 on:click >{title}</h1>
+  <h1 on:click>{title}</h1>
 {:else}
-  <h1 on:click style = "top: {top}px; left: {left}px;;">{title}</h1>
+  <h1 on:click style = "font-weight:50;">{title}</h1>
 {/if}

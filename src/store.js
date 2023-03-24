@@ -20,7 +20,7 @@ mentalModel: {
 }})
 
 if(location.hash){
-  var data = JSON.parse(LZ.decompressFromBase64(location.hash.substr(4)))
+  var data = JSON.parse(LZ.decompressFromEncodedURIComponent(location.hash.substr(4)))
   globalText.set(data)
 }
 
@@ -34,7 +34,7 @@ export function forceUpdate(){
 }
 
 globalText.subscribe((v)=>{
-  const compressed = LZ.compressToBase64(JSON.stringify(v))
+  const compressed = LZ.compressToEncodedURIComponent(JSON.stringify(v))
   location.hash = "~v1" + compressed
   console.log(v)
 })

@@ -1,4 +1,5 @@
 <script>
+  export let blur
   import Textbox from './Textbox.svelte'
   export let editable = false
   export let text = {
@@ -6,7 +7,7 @@
     popupText: ' '
   }
 </script>
-<div id = 'trapezoid' on:click>
+<div id = 'trapezoid' on:click class:blur>
   <Textbox editable = {editable} bind:text={text.displayText} on:keyup></Textbox>
   
   
@@ -35,5 +36,11 @@
     background-color: #033860;
     left:-25px;
     z-index: 3;
+  }
+  .blur{
+    filter: blur(5px);
+  }
+  div{
+    transition: filter 1000ms
   }
 </style>

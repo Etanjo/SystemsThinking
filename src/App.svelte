@@ -4,6 +4,10 @@
   import DisplayIceberg from './DisplayIceberg.svelte'
   export let active = 'display'
   import Tabs from "./Tabs.svelte"
+  let blur = true
+  function moveWater(){
+    blur = false
+  }
 </script>
 
 <main>
@@ -14,13 +18,14 @@
   <h1>Iceberg Model</h1>
 
   {#if active == 'example'}
-    <ExampleIceberg/>
+    <ExampleIceberg {blur}/>
   {:else if active == 'display'}
-    <DisplayIceberg/>
+    <DisplayIceberg {blur}/>
   {:else if active == 'edit'}
     <EditIceberg/>
   {/if}
   <Tabs {active} onChangeTab={(v)=>{active=v}}/>
+  <div class="topWater" on:click={moveWater} class:clickable={blur}></div>
 </main>
 
 <style>
@@ -74,5 +79,18 @@
     height: 45%;
     left: 0%;
     top: 55%;
+  }
+  .topWater{
+    filter: blur(5px);
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+  }
+  .clickable{
+    pointer-events:all;
   }
 </style>

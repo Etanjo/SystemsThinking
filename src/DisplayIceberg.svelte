@@ -1,4 +1,5 @@
 <script>
+  export let blur
   import Event from './Event.svelte'
   import Mental from './MentalModel.svelte'
   import Pattern from './Pattern.svelte'
@@ -23,16 +24,16 @@
 
 <main>
   <Popup open = {eOpen} text = {text.events}/>
-  <Event text = {text.events} on:click={()=>eOpen = !eOpen}/> 
+  <Event text = {text.events} on:click={()=>eOpen = !eOpen} {blur}/> 
   <label>Visible Events</label>
   <Popup open = {pOpen} text = {text.patterns}/>
-  <Pattern text = {text.patterns} on:click={()=>pOpen = !pOpen}/> 
+  <Pattern text = {text.patterns} on:click={()=>pOpen = !pOpen} {blur}/> 
   <label>Patterns</label>
   <Popup open = {sOpen} text = {text.structures}/>
-  <Structure text = {text.structures} on:click={()=>sOpen = !sOpen}/>
+  <Structure text = {text.structures} on:click={()=>sOpen = !sOpen} {blur}/>
   <label>Structures</label>
   <Popup open = {mOpen} text = {text.mentalModel}/>
-  <Mental text = {text.mentalModel} on:click={()=>mOpen = !mOpen}/>
+  <Mental text = {text.mentalModel} on:click={()=>mOpen = !mOpen} {blur}/>
   <label>Mental Models</label>
 </main>
 

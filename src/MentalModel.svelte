@@ -1,4 +1,5 @@
 <script>
+  export let blur
   import Popup from './Popup.svelte'
   let open = false
     export let text = {
@@ -12,7 +13,7 @@
 
 <main>
 
-  <div id='trapezoid' on:click>
+  <div id='trapezoid' on:click class:blur>
       <Textbox editable = {editable} bind:text={text.displayText} on:keyup></Textbox>
     </div>
 </main>
@@ -29,6 +30,9 @@
       font-family: 'PT Sans';
       position: relative;;
   }
+  .blur{
+    filter: blur(5px);
+  }
       #trapezoid::after{
     content: ' ';
     display: block;
@@ -40,5 +44,8 @@
     background-color: #033860;
     left:-25px;
       z-index: 2;
+  }
+  div{
+    transition: filter 1000ms
   }
 </style>

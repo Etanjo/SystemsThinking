@@ -9,7 +9,7 @@
 <div class="wrap" on:click>
   <div id='triangle'>
   </div>
-  <div class="text" >
+  <div class="text" class:blur>
       <Textbox editable = {editable} bind:text={text.displayText} on:keyup></Textbox>
   </div>
 </div>

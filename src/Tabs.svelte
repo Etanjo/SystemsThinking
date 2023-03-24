@@ -11,7 +11,8 @@
 <style>
   div{
     position: fixed;
-  bottom: 0;
+    bottom: 0;
+    left: 40%;
     display: flex;
   }
   
